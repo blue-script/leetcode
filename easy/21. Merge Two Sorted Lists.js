@@ -28,14 +28,8 @@
  * @param {ListNode} list2
  * @return {ListNode}
  */
-
-function ListNode(val, next) {
-  this.val = (val === undefined ? 0 : val)
-  this.next = (next === undefined ? null : next)
-}
-
 var mergeTwoLists = function (list1, list2) {
-  const head = new ListNode()
+  const head = {val: 0, next: null}
   let current = head
 
   while (list1 !== null && list2 !== null) {
